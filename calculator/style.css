@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
+  z-index: -1;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(217, 238, 247));
+}
+
+h1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  color: rgb(74, 11, 156);
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+p {
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  color: #1612f8;
+  font-weight: bold;
+  font-size: larger;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  background-color: blanchedalmond;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px 1px forestgreen;
+  justify-content: center;
+}
+
+button:focus {
+  outline: gainsboro;
+}
+
+button:hover {
+  background-color: gold;
+  color: hotpink;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+input {
+  background-color: #c2cf88;
+  border: none;
+  color: rgb(207, 26, 26);
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 9px 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-group button {
+  background-color: #096f9e;
+  /* Green background */
+  border: 1px solid green;
+  /* Green border */
+  color: white;
+  /* White text */
+  padding: 10px 24px;
+  /* Some padding */
+  cursor: pointer;
+  /* Pointer/hand icon */
+  float: left;
+  /* Float the buttons side by side */
+  margin: 5px;
+}
+
+/* Clear floats (clearfix hack) */
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+  /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+}
