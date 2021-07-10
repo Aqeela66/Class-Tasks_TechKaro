@@ -1,17 +1,7 @@
-class Stack {
+class Queue {
     constructor() {
         this.items = [];
     }
-    // push function
-    push(item) {
-        this.items.push(item);
-    }
-    pop() {
-        //if (this.items.length == 0)
-        // return "Underflow";
-        return this.items.pop();
-    }
-    // peek function
     peek() {
         console.log(this.items[this.items.length - 1]);
     }
@@ -20,7 +10,7 @@ class Stack {
 
         return this.items.length == 0;
     }
-    printstack() {
+    printqueue() {
         for (let i = 0; i < this.items.length; i++)
             console.log(this.items[i]);
     }
